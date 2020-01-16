@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import dagger.android.support.DaggerAppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 
 import com.aprouxdev.dagger2course.R;
 import com.aprouxdev.dagger2course.models.User;
+import com.aprouxdev.dagger2course.ui.main.MainActivity;
 import com.aprouxdev.dagger2course.viewmodels.ViewModelProviderFactory;
 import com.bumptech.glide.RequestManager;
 
@@ -71,6 +73,7 @@ public class AuthActivity extends DaggerAppCompatActivity implements View.OnClic
                        case AUTHENTICATED:{
                             showProgressBar(false);
                            Log.d(TAG, "onChanged: LOGIN SUCCESS: " + userAuthResource.data.getEmail());
+                           onLoginSuccess();
                            break;
                        }
                        case ERROR:{
@@ -96,6 +99,12 @@ public class AuthActivity extends DaggerAppCompatActivity implements View.OnClic
         else{
             progressBar.setVisibility(View.INVISIBLE);
         }
+    }
+
+    private void onLoginSuccess(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void setLogo(){

@@ -23,8 +23,8 @@ public class AuthViewModel extends ViewModel {
     private final AuthApi authApi;
 
     // Create a MediatorLiveData
-    // With Resource : private MediatorLiveData<User> authUser = new MediatorLiveData<>();
-    // become :
+    // private MediatorLiveData<User> authUser = new MediatorLiveData<>();
+    // With Resource become :
     // private MediatorLiveData<AuthResource<User>> authUser = new MediatorLiveData<>();
     // Now replace by a Session Manager
     private SessionManager sessionManager;
