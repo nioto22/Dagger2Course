@@ -3,6 +3,7 @@ package com.aprouxdev.dagger2course.di;
 import android.app.Application;
 
 import com.aprouxdev.dagger2course.BaseApplication;
+import com.aprouxdev.dagger2course.SessionManager;
 
 import javax.inject.Singleton;
 
@@ -22,6 +23,7 @@ import dagger.android.support.AndroidSupportInjectionModule;
 public interface AppComponent extends AndroidInjector<BaseApplication> {
     // See AppComponent as a service and BaseApplication as Client
 
+    SessionManager sessionManager();
 
     // override the component object
     @Component.Builder
