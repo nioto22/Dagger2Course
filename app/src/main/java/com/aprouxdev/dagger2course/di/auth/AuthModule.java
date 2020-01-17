@@ -2,7 +2,9 @@ package com.aprouxdev.dagger2course.di.auth;
 
 import com.aprouxdev.dagger2course.network.auth.AuthApi;
 
-        import dagger.Module;
+import javax.inject.Named;
+
+import dagger.Module;
         import dagger.Provides;
         import retrofit2.Retrofit;
 

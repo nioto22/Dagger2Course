@@ -7,6 +7,7 @@ import com.aprouxdev.dagger2course.models.User;
 import com.aprouxdev.dagger2course.network.auth.AuthApi;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.LiveDataReactiveStreams;

@@ -4,6 +4,7 @@ import android.app.Application;
 import android.graphics.drawable.Drawable;
 
 import com.aprouxdev.dagger2course.R;
+import com.aprouxdev.dagger2course.models.User;
 import com.aprouxdev.dagger2course.util.Constants;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
@@ -52,6 +53,4 @@ public class AppModule {
     static Drawable provideAppDrawable(Application application){
         return ContextCompat.getDrawable(application, R.drawable.logo);
     }
-
-
 }
