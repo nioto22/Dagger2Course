@@ -1,10 +1,10 @@
 # Dagger2Course
 
 Here's a list of the concepts I saw in the course :
-<\br>•	Dagger version 2.2+ (Focus on Dagger-Android)
-<\br>•	Dagger basics: 
-<\br>1.	DaggerApplication
-<\br>2.	DaggerAppCompatActivity 
+<br>•	Dagger version 2.2+ (Focus on Dagger-Android)
+<br>•	Dagger basics: 
+<br>1.	DaggerApplication
+<br>2.	DaggerAppCompatActivity 
 <\br>3.	DaggerFragment
 <\br>•	@Provides, @Binds, @BindsInstance explanation
 <\br>•	Map Multibinding
