@@ -50,7 +50,7 @@ public class ProfileFragment extends DaggerFragment {
 
         viewModel = ViewModelProviders.of(this, providerFactory).get(ProfileViewModel.class);
 
-
+        subscribeObservers();
     }
 
     private void subscribeObservers(){

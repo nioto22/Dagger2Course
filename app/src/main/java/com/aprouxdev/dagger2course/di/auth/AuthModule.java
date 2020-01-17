@@ -9,6 +9,7 @@ import com.aprouxdev.dagger2course.network.auth.AuthApi;
 @Module
 public class AuthModule {
 
+    @AuthScope
     @Provides
     static AuthApi provideAuthApi(Retrofit retrofit){
         return retrofit.create(AuthApi.class);
