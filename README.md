@@ -22,5 +22,5 @@ Here's a list of the concepts I saw in the course :
 
 Here is a diagramm of the Dagger Architecture of our App : 
  
- ![Dagger App diagram]dagger.png
+ ![Dagger App diagram] https://github.com/nioto22/Dagger2Course/edit/master/Dagger2Course/dagger.png 
 
